@@ -37,6 +37,16 @@ extern struct Options Options;
 static int JumpCall_Count;
 static struct JumpCall *JumpCalls;
 
+struct JumpCall *Get_JumpCall()
+{
+	return JumpCalls;
+}
+
+int Get_JumpCall_Count()
+{
+	return JumpCall_Count;
+}
+
 void Display_JumpCalls() {
 	int i;
 	printf("%d jumps/calls found:\n", JumpCall_Count);
