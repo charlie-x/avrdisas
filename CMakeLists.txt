@@ -16,7 +16,6 @@ include_directories(includes)
 
 # Define the source and header files
 set(SOURCES
-    src/avrdisas.c
     src/JumpCall.c
     src/Callbacks_Assembly.c
     src/Callbacks_PseudoCode.c
@@ -28,7 +27,10 @@ set(SOURCES
 )
 
 # Define the executable
-add_executable(avrdisas ${SOURCES})
+add_executable(avrdisas src/avrdisas.c ${SOURCES})
+
+add_library(avrdisas_static STATIC ${SOURCES})
+
 
 # Install rules
 install(TARGETS avrdisas DESTINATION /usr/bin)
