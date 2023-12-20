@@ -45,10 +45,11 @@ also look at the test/ packages for an example of a more advanced tag file.
 
 
 
-What license is it uner?
+What license is it under?
 ========================
 
 GPL-2. GNU General Public License Version 2. Also see the LICENSE file for
 details.
 
 
+modded for my imgui avr simulator toy.
