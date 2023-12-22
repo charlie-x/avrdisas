@@ -9,7 +9,7 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
 # Set the compiler options
-add_compile_options(-O2 -Wall -D_POSIX_SOURCE -D_XOPEN_SOURCE=500 -DAVRDISAS_VERSION="${PROJECT_VERSION}")
+add_compile_options(-O2 -Wall -D_POSIX_C_SOURCE=200112L  -D_XOPEN_SOURCE=500 -DAVRDISAS_VERSION="${PROJECT_VERSION}")
 
 # Include directories
 include_directories(includes)
